@@ -13,9 +13,9 @@ chmod 600 "$SSH_PATH/deploy_key"
 GIT_COMMAND="git push dokku@$HOST:$PROJECT"
 
 if [ -n "$BRANCH" ]; then
-    GIT_COMMAND="$GIT_COMMAND $BRANCH:master"
+    GIT_COMMAND="$GIT_COMMAND $BRANCH:main"
 else
-    GIT_COMMAND="$GIT_COMMAND HEAD:master"
+    GIT_COMMAND="$GIT_COMMAND HEAD:main"
 fi
 
 if [ -n "$FORCE_DEPLOY" ]; then
