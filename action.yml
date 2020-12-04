@@ -1,10 +1,10 @@
-name: 'Dokku Github Action'
-description: 'Deploy applications to Dokku'
-author: 'Vitaly Liber'
+name: "Dokku Github Action Forked to use main branch"
+description: "Deploy applications to Dokku"
+author: "Vitaly Liber"
 branding:
-  icon: 'upload-cloud'  
-  color: 'blue'
-inputs: 
+  icon: "upload-cloud"
+  color: "blue"
+inputs:
   private_key:
     description: "This will be used for ssh authentication. You can find it in home/.ssh/id_rsa"
     required: true
@@ -15,5 +15,5 @@ outputs:
   status:
     description: "The Success/Failure of the action"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
